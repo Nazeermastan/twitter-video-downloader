@@ -48,7 +48,7 @@ def download_twitter_video(tweet_url, format_id, output_path):
 def main():
     st.title("🐦Twitter Video Downloader")
     st.write("Enter a Twitter video URL and select the quality to download.")
-    tweet_url = st.text_input(placeholder="Paste your twitter URL")
+    tweet_url = st.text_input("Paste your twitter URL", "")
     if tweet_url:
         formats, video_title = get_video_formats(tweet_url)
         if formats:
