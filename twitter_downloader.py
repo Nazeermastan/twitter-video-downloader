@@ -1,6 +1,7 @@
 import streamlit as st
 import yt_dlp
 
+st.set_page_config(page_title="Twitter Video Downloader")
 def get_video_formats(tweet_url):
     """Fetch available video formats for the given tweet URL."""
     ydl_opts = {"quiet": True, "no_warnings": True}
